@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
+    <div class="main-display">
+        <h1>Rock, Paper, Scissors</h1>
+        <button id="reset-button">Reset</button>
+    </div>
+
+    <div class="score">
+        <div class="score-display">
+            <h2>Score</h2>
+            <h3>
+                You: <span id="player-score">0</span>
+                Computer: <span id="computer-score">0</span>
+            </h3>
+            <h3>
+                Ties: <span id="tie-score">0</span>
+            </h3>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button>
+            <img class="choice-button" data-choice="rock" src="./images/rock.png" alt="rock icon">
+        </button>
+        <button>
+            <img class="choice-button" data-choice="paper" src="./images/paper.png" alt="paper icon">
+        </button>
+        <button>
+            <img class="choice-button" data-choice="scissors" src="./images/scissors.png" alt="scissors icon">
+        </button>
+    </div>
+
+    <div class="results">
+        <h3 class="results-display"></h3>
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,9 @@
+body {
+    background-image: url('./images/background.jpg');
+    text-align: center;
+}
+
+img {
+    height: 3rem;
+    width: 3rem;
+}
